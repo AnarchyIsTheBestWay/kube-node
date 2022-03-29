@@ -1,22 +1,13 @@
-
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
-  name: node-app-deployment
-  labels:
-    app: node-app
+  name: node-app-service
 spec:
-  replicas: 1
   selector:
-    matchLabels:
-      app: node-app
-  template:
-    metadata:
-      labels:
-        app: node-app
-    spec:
-      containers:
-        - name: node-app
-          image: jthueux/node-kube-image:latest
-          ports:
-            - containerPort: 8080
+    app: node-app
+  ports:
+    - protocol: TCP
+      port: 3001
+      targetPort: 3001
+      nodePort: 3001
+  type: NodePort

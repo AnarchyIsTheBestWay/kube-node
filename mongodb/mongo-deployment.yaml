@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-api-k8s
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: mongo-api-k8s
+  template:
+    metadata:
+      labels:
+        name: mongo-api-k8s
+    spec:
+      containers:
+        - name: mongo-api-k8s
+          image: mongo:latest
+          ports:
+            - containerPort: 8081
