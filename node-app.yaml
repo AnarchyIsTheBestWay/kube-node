@@ -3,13 +3,12 @@ kind: Service
 metadata:
   name: node-api-k8s
   labels:
-    app: node
+    app: node-api-k8s
 spec:
-  ports:
-  - port: 3001
-    protocol: TCP
-    targetPort: 3001
-    nodePort: 31000
-  selector:
-    app: node
   type: NodePort
+  ports:
+    - port: 3001
+      protocol: TCP
+      targetPort: 3001
+  selector:
+      name: node-api-k8s
