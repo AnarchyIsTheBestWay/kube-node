@@ -5,14 +5,14 @@ metadata:
   labels:
     app: node-api-k8s
 spec:
-  type: NodePort
   selector:
-    name: node-api-k8s
     app: node-api-k8s
+  type: NodePort
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 3001
       targetPort: 3001
-      nodePort: 32000
+      nodePort: 31000
 status:
   loadBalancer: {}

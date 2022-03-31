@@ -1,19 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: node
   name: node-api-k8s
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      name: node-api-k8s
   template:
     metadata:
       labels:
-        name: node-api-k8s
+        app: node-api-k8s
     spec:
       containers:
         - name: node-api-k8s
           image: jthueux/node-kube-image:oxylib
+          imagePullPolicy: Always
           ports:
             - containerPort: 3001
