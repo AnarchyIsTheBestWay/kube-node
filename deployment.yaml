@@ -4,6 +4,9 @@ metadata:
   namespace: node
   name: node-api-k8s
 spec:
+  selector:
+    matchLabels:
+      app: node-api-k8s
   replicas: 1
   template:
     metadata:
