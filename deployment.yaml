@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: node-api-k8s
-          image: jthueux/node-kube-image:test2
+          image: jthueux/node-kube-image:oxylib
           ports:
             - containerPort: 3001
