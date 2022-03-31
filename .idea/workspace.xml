@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c5688b0-7784-487a-9f9c-3b0cf6c9e3c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb/mongo-config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb/mongodb-headless.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb/mongodb-sts.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/mongodb-nodeport-svc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/mongodb-nodeport-svc.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648199858283</updated>
       <workItem from="1648199859390" duration="6318000" />
-      <workItem from="1648506481399" duration="3582000" />
+      <workItem from="1648506481399" duration="4144000" />
     </task>
     <servers />
   </component>
