@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c5688b0-7784-487a-9f9c-3b0cf6c9e3c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node-app.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <updated>1648199858283</updated>
       <workItem from="1648199859390" duration="6318000" />
       <workItem from="1648506481399" duration="10712000" />
-      <workItem from="1648756323217" duration="1962000" />
+      <workItem from="1648756323217" duration="2918000" />
     </task>
     <servers />
   </component>
