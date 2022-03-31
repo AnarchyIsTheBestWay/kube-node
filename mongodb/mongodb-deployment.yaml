@@ -54,6 +54,11 @@ spec:
             secretKeyRef:
               name: mongo-creds
               key: password
+        - name: MONGO_INITDB_DATABASE
+          valueFrom:
+            secretKeyRef:
+              name: mongo-creds
+              key: database
         volumeMounts:
         - name: "mongo-data-dir"
           mountPath: "/data/db"

@@ -1,21 +1,9 @@
 const express = require('express')
 const app = express()
-const session = require("express-session");
 var cors = require("cors")
-var key = "mot de passe crypté de fou";
-var jwt = require('jsonwebtoken');
-
-//var cookieConfig = require("./CookieConfig");
-var maxNumb = 4;
 
 var bodyParser = require('body-parser')
-var secret = "qazsedrgyhuijouhygtrdrtfyguhijok"
-const cookieConfig = {
-    httpOnly: true,
-    secure: false,
-    sameSite: false,
-    expires: new Date(Date.now() + (1000 * 60 * 60 * 24 * 365)),
-};
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -24,18 +12,6 @@ app.use(cors({
     credentials: true,
     origin: true,
 }))
-
-/*app.use(
-    session({
-        secret: secret,
-        saveUninitialized: true,
-        resave: true,
-        cookie: {
-            httpOnly: false,
-            secure: false,
-        },
-    }),
-);*/
 
 app.use(function (req, res, next) {
     res.header('Content-Type', 'application/json;charset=UTF-8')
