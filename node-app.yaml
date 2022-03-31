@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: node-api-k8s
   labels:
-    name: node-api-k8s
+    app: node-api-k8s
 spec:
   type: NodePort
   selector:
@@ -14,3 +14,5 @@ spec:
       port: 3001
       targetPort: 3001
       nodePort: 32000
+status:
+  loadBalancer: {}
