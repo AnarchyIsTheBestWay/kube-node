@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: node-api-k8s
+      name: node-api-k8s
   replicas: 1
   template:
     metadata:
