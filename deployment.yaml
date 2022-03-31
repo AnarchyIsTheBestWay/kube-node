@@ -1,6 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: node-api-k8s
+    version: v1
+    kubernetes.io/cluster-service: "true"
   name: node-api-k8s
 spec:
   selector:
